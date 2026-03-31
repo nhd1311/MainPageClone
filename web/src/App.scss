@@ -1,0 +1,55 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 13px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow: hidden; 
+}
+
+:root {
+  --bg-topbar:     #1a3a8f;  
+  --bg-navbar:     #111318;   
+  --bg-primary:    #0d1117;  
+  --bg-secondary:  #161b22;  
+  --bg-row-hover:  #1c2128;   
+  --bg-toolbar:    #1a1f27;   
+  --bg-tab-active: #d97706;   
+
+  --color-ceiling: #c084fc;   
+  --color-floor:   #3b82f6;   
+  --color-ref:     #f59e0b;   
+  --color-up:      #22c55e;   
+  --color-down:    #ef4444;   
+  --color-neutral: #9ca3af;  
+
+  --text-primary:   #e6edf3;
+  --text-secondary: #8b949e;
+  --text-muted:     #6b7280;
+  --text-topbar:    #ffffff;
+
+  --border-color:       #30363d;
+  --border-color-light: #21262d;
+
+  --topbar-height:  40px;
+  --navbar-height:  36px;
+  --bottombar-height: 44px;
+}
+
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #484f58; }
+
+.text-up      { color: var(--color-up); }
+.text-down    { color: var(--color-down); }
+.text-ref     { color: var(--color-ref); }
+.text-ceiling { color: var(--color-ceiling); }
+.text-floor   { color: var(--color-floor); }
+.text-muted   { color: var(--text-muted); }

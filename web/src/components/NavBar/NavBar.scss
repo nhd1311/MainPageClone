@@ -1,0 +1,112 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.navbar {
+  @include flex-between;
+  height: $navbar-height;
+  background-color: var(--bg-navbar);
+  padding: 0 8px;
+  border-bottom: 1px solid var(--border-color);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 90;
+
+  &__menu {
+    @include flex-center;
+    height: 100%;
+    list-style: none;
+  }
+
+  // Từng item
+  &__item {
+    position: relative;
+    height: 100%;
+    @include flex-center;
+
+    &:hover .navbar__dropdown {
+      display: block;
+    }
+
+    &--active .navbar__link {
+      color: var(--text-primary);
+      border-bottom-color: var(--bg-tab-active);
+    }
+  }
+
+  &__link {
+    @include flex-center;
+    gap: 3px;
+    height: 100%;
+    padding: 0 10px;
+    color: var(--text-secondary);
+    font-size: $font-size-sm;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color $transition-base, border-color $transition-base;
+    letter-spacing: 0.2px;
+
+    &:hover {
+      color: var(--text-primary);
+      border-bottom-color: var(--color-ref);
+    }
+  }
+
+  &__arrow {
+    font-size: 9px;
+    color: var(--text-muted);
+    margin-left: 1px;
+  }
+
+  &__dropdown {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    min-width: 180px;
+    z-index: 200;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 4px 0;
+  }
+
+  &__dropdown-item {
+    display: block;
+    padding: 7px 14px;
+    color: var(--text-secondary);
+    font-size: $font-size-sm;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background $transition-fast, color $transition-fast;
+
+    &:hover {
+      background-color: var(--bg-row-hover);
+      color: var(--text-primary);
+    }
+  }
+
+  &__right {
+    @include flex-center;
+    gap: 6px;
+  }
+
+  &__icon-btn {
+    @include btn-reset;
+    @include flex-center;
+    color: var(--text-secondary);
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 3px;
+    transition: color $transition-base, background $transition-base;
+
+    &:hover {
+      color: var(--text-primary);
+      background: var(--bg-row-hover);
+    }
+  }
+}

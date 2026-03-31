@@ -1,0 +1,14 @@
+@use '../../styles/variables' as *;
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+
+  &__content {
+    flex: 1;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+  }
+}

@@ -1,0 +1,155 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.topbar {
+  @include flex-between;
+  height: $topbar-height;
+  background-color: var(--bg-topbar);
+  padding: 0 12px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 100;
+
+  &__left {
+    @include flex-center;
+    gap: 10px;
+  }
+
+  &__logo {
+    @include flex-center;
+    gap: 6px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__logo-icon {
+    @include flex-center-all;
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--bg-topbar);
+    flex-shrink: 0;
+  }
+
+  &__logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+
+    span:first-child {
+      font-size: $font-size-xs;
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 400;
+    }
+
+    span:last-child {
+      font-size: $font-size-base;
+      color: #ffffff;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &__search {
+    @include flex-center;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 0 8px;
+    height: 26px;
+    gap: 5px;
+    cursor: pointer;
+    transition: background $transition-base;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.22);
+    }
+  }
+
+  &__search-icon        { color: rgba(255, 255, 255, 0.7); font-size: $font-size-sm; }
+  &__search-placeholder { color: rgba(255, 255, 255, 0.6); font-size: $font-size-sm; white-space: nowrap; }
+
+  &__gtgd {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: $font-size-sm;
+    white-space: nowrap;
+
+    strong { font-weight: 600; }
+  }
+
+  &__right {
+    @include flex-center;
+    gap: 14px;
+  }
+
+  &__clock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1.2;
+  }
+
+  &__time {
+    font-size: $font-size-base;
+    font-weight: 600;
+    color: #ffffff;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__date {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  &__controls {
+    @include flex-center;
+    gap: 10px;
+  }
+
+  &__btn {
+    @include btn-reset;
+    @include flex-center;
+    gap: 4px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: $font-size-sm;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: background $transition-base, color $transition-base;
+    white-space: nowrap;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+    }
+
+    &--icon {
+      font-size: 15px;
+      padding: 2px 3px;
+    }
+  }
+
+  &__divider {
+    width: 1px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  &__badge {
+    position: relative;
+    @include flex-center;
+  }
+
+  &__badge-dot {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 6px;
+    height: 6px;
+    background: #f59e0b;
+    border-radius: 50%;
+    border: 1px solid var(--bg-topbar);
+  }
+}
