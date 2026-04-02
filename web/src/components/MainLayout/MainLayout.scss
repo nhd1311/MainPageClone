@@ -8,7 +8,8 @@
 
   &__content {
     flex: 1;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: var(--bg-primary);
   }
 }

@@ -330,7 +330,7 @@ export const marketData = [
     name: 'VNI',
     value: 1666.62, change: 4.07, pctChange: 0.24, refValue: 1662.54,
     klgd: 1.24, gtgd: 65.84, totalVol: 1237630,
-    up: 0, ref: 0, down: 0,
+    up: 0, upNew: 0, ref: 0, down: 0, downNew: 0,
     session: 'Phiên mở cửa',
     showCard: true,
     chartData: [
@@ -347,7 +347,7 @@ export const marketData = [
     name: 'HNX',
     value: 251.44, change: 0.84, pctChange: 0.34, refValue: 250.59,
     klgd: 2.50, gtgd: 43.93, totalVol: 2563329,
-    up: 37, ref: 39, down: 17,
+    up: 37, upNew: 3, ref: 39, down: 17, downNew: 1,
     session: 'Phiên liên tục',
     showCard: true,
     chartData: [
@@ -364,7 +364,7 @@ export const marketData = [
     name: 'UPCOM',
     value: 126.06, change: 1.25, pctChange: 1.00, refValue: 124.81,
     klgd: 0.81, gtgd: 17.05, totalVol: 829025,
-    up: 54, ref: 30, down: 15,
+    up: 54, upNew: 5, ref: 30, down: 15, downNew: 1,
     session: 'Phiên liên tục',
     showCard: true,
     chartData: [
@@ -381,7 +381,7 @@ export const marketData = [
     name: 'VN30',
     value: 1815.70, change: 3.77, pctChange: 0.21, refValue: 1811.92,
     klgd: 0.00, gtgd: 0.00, totalVol: 0,
-    up: 0, ref: 0, down: 0,
+    up: 0, upNew: 0, ref: 0, down: 0, downNew: 0,
     session: 'Phiên mở cửa',
     showCard: true,
     chartData: [
@@ -398,7 +398,7 @@ export const marketData = [
     name: 'HNX30',
     value: 546.20, change: 2.62, pctChange: 0.48, refValue: 543.58,
     klgd: 1.74, gtgd: 35.36, totalVol: null,
-    up: 15, ref: 4, down: 2,
+    up: 15, upNew: 2, ref: 4, down: 2, downNew: 0,
     session: null,
     showCard: false,
     chartData: null,

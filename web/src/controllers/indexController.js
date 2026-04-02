@@ -10,7 +10,7 @@ export function getCardData() {
 
 export function formatIndexValue(value) {
   if (value == null) return '';
-  return value.toLocaleString('vi-VN', {
+  return value.toLocaleString('en-US', {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   });

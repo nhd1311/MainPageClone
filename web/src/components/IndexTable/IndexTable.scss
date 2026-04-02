@@ -1,0 +1,71 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.index-table {
+  display: flex;
+  width: 100%;
+  height: 162px;
+  border-bottom: 1px solid var(--border-color);
+  flex-shrink: 0;
+  background-color: var(--bg-secondary);
+
+  &__cards {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    border-right: 1px solid var(--border-color);
+    overflow: hidden;
+  }
+
+  &__summary {
+    width: 390px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &__summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: $font-size-xs;
+  }
+
+  &__summary-thead th {
+    padding: 5px 5px 4px;
+    text-align: right;
+    color: var(--text-muted);
+    font-weight: 400;
+    border-bottom: 1px solid var(--border-color);
+    white-space: nowrap;
+
+    &.mc-col--name { text-align: left; min-width: 58px; }
+    &.mc-col--val  { min-width: 90px; }
+    &.mc-col--num  { min-width: 60px; }
+    &.mc-col--ud   { min-width: 70px; text-align: center; }
+  }
+
+  &__summary-tbody td {
+    padding: 4px 5px;
+    text-align: right;
+    border-bottom: 1px solid var(--border-color-light);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    font-size: $font-size-xs;
+
+    &.mc-col--name {
+      text-align: left;
+      font-weight: 600;
+      font-size: $font-size-sm;
+    }
+
+    &.mc-col--pct { font-size: $font-size-xs; }
+    &.mc-col--ud  { text-align: center; }
+  }
+
+  &__summary-tbody tr:last-child td { border-bottom: none; }
+
+  &__up   { color: var(--color-up); }
+  &__ref  { color: var(--color-ref); }
+  &__down { color: var(--color-down); }
+}

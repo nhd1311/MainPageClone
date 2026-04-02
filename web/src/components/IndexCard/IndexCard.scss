@@ -1,0 +1,159 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.index-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  padding: 6px 8px 5px;
+  min-width: 0;
+  cursor: pointer;
+  transition: background $transition-base;
+
+  &:last-child { border-right: none; }
+
+  &:hover { background-color: var(--bg-row-hover); }
+
+  &__chart {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+  }
+
+  &__chart-area {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__svg {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &__line {
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    &--up   { stroke: var(--color-up); }
+    &--down { stroke: var(--color-down); }
+    &--ref  { stroke: var(--color-ref); }
+  }
+
+  &__dot--up   { color: var(--color-up); }
+  &__dot--down { color: var(--color-down); }
+  &__dot--ref  { color: var(--color-ref); }
+
+  &__ref-line {
+    stroke: var(--color-ref);
+    stroke-width: 0.8;
+    stroke-dasharray: 3 3;
+    opacity: 0.8;
+  }
+
+  &__ref-value {
+    flex-shrink: 0;
+    align-self: center;
+    font-size: 10px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    padding-left: 4px;
+    font-variant-numeric: tabular-nums;
+    min-width: 46px;
+    text-align: right;
+  }
+
+  &__axis {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0 0;
+    padding-right: 50px; 
+  }
+
+  &__axis-label {
+    font-size: 9px;
+    color: var(--text-muted);
+    line-height: 1;
+  }
+
+  &__info {
+    @include flex-between;
+    margin-top: 5px;
+    gap: 4px;
+  }
+
+  &__name {
+    @include flex-center;
+    gap: 3px;
+    font-size: $font-size-sm;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+  }
+
+  &__arrow { font-size: 9px; color: var(--text-muted); }
+
+  &__price-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0px;
+  }
+
+  &__value {
+    font-size: $font-size-sm;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    line-height: 1.3;
+  }
+
+  &__change {
+    font-size: $font-size-xs;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    line-height: 1.3;
+  }
+
+  &__stats {
+    @include flex-between;
+    margin-top: 3px;
+  }
+
+  &__vol, &__gtgd {
+    font-size: $font-size-xs;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    span { color: var(--text-primary); }
+  }
+
+  &__footer {
+    @include flex-between;
+    margin-top: 3px;
+  }
+
+  &__updown {
+    @include flex-center;
+    gap: 5px;
+    font-size: $font-size-xs;
+  }
+
+  &__up      { color: var(--color-up); }
+  &__neutral { color: var(--text-muted); }
+  &__down    { color: var(--color-down); }
+
+  &__session {
+    font-size: $font-size-xs;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+}

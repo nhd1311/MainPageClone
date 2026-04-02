@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/MainLayout/MainLayout';
+import PriceBoard from './components/PriceBoard/PriceBoard';
 import './App.scss';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
           path="/"
           element={
             <MainLayout>
+              <PriceBoard />
             </MainLayout>
           }
         />
