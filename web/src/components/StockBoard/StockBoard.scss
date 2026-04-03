@@ -1,0 +1,245 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+
+.stock-board {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+
+  &__toolbar {
+    @include flex-between;
+    height: 42px;
+    background-color: var(--bg-toolbar);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 10px;
+    flex-shrink: 0;
+    gap: 6px;
+  }
+
+  &__toolbar-left  { @include flex-center; gap: 4px; min-width: 0; }
+  &__toolbar-right { @include flex-center; gap: 6px; flex-shrink: 0; }
+
+  &__search {
+    width: 110px;
+    height: 28px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    color: var(--text-secondary);
+    font-size: $font-size-sm;
+    padding: 0 8px;
+    outline: none;
+    font-family: inherit;
+
+    &::placeholder { color: var(--text-muted); }
+  }
+
+  &__btn {
+    @include btn-reset;
+    @include flex-center;
+    height: 28px;
+    padding: 0 10px;
+    font-size: $font-size-sm;
+    border-radius: 3px;
+    white-space: nowrap;
+    gap: 3px;
+    transition: background $transition-fast, color $transition-fast;
+
+    &--plus {
+      width: 28px;
+      padding: 0;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      font-size: 18px;
+      line-height: 1;
+      &:hover { background: var(--bg-row-hover); }
+    }
+
+    &--trade {
+      background: #1d4ed8;
+      color: #ffffff;
+      font-weight: 500;
+      &:hover { background: #1e40af; }
+    }
+
+    &--basic {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      &:hover { background: var(--bg-row-hover); color: var(--text-primary); }
+    }
+
+    &--dropdown {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      &:hover { background: var(--bg-row-hover); color: var(--text-primary); }
+    }
+
+    &--icon {
+      color: var(--text-secondary);
+      font-size: 15px;
+      padding: 0 5px;
+      &:hover { color: var(--text-primary); background: var(--bg-row-hover); }
+    }
+
+    &--collapse {
+      color: var(--text-secondary);
+      font-size: $font-size-sm;
+      &:hover { color: var(--text-primary); }
+    }
+  }
+
+  &__caret { font-size: 9px; color: var(--text-muted); }
+
+  &__tab-group {
+    @include flex-center;
+    margin-left: 4px;
+
+    &--extra { margin-left: 8px; gap: 2px; }
+  }
+
+  &__tab {
+    @include btn-reset;
+    @include flex-center;
+    height: 36px;
+    padding: 0 10px;
+    font-size: $font-size-xs;
+    font-weight: 500;
+    color: var(--text-secondary);
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    gap: 3px;
+    transition: color $transition-fast, border-color $transition-fast;
+
+    &:hover { color: var(--text-primary); }
+
+    &--active {
+      background: var(--bg-tab-active);
+      color: #ffffff;
+      border-radius: 3px;
+      border-bottom: none;
+    }
+  }
+
+  &__tab-extra {
+    @include btn-reset;
+    height: 24px;
+    padding: 0 8px;
+    font-size: $font-size-xs;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    border-radius: 3px;
+    transition: background $transition-fast, color $transition-fast;
+
+    &:hover { color: var(--text-primary); background: var(--bg-row-hover); }
+
+    &--active {
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+    }
+  }
+
+
+  &__table-wrap {
+    flex: 1;
+    overflow: auto;
+    min-height: 0;
+  }
+
+  &__table {
+    border-collapse: collapse;
+    font-size: $font-size-sm;
+    width: max-content;
+    min-width: 100%;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  &__thead-group th {
+    padding: 5px 6px;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--bg-toolbar);
+    border-bottom: 1px solid var(--border-color);
+    white-space: nowrap;
+    color: var(--text-secondary);
+
+    &.th-base { background-color: var(--bg-primary); }
+  }
+
+  &__thead-cols th {
+    padding: 6px 7px;
+    font-size: $font-size-sm;
+    font-weight: 400;
+    text-align: right;
+    background-color: var(--bg-toolbar);
+    border-bottom: 1px solid var(--border-color);
+    white-space: nowrap;
+    color: var(--text-muted);
+
+    &.col-symbol { text-align: left; }
+    &.col-small  { text-align: right; }
+  }
+
+  .th-group {
+    &--bid     { color: var(--color-up);      border-left: 1px solid var(--border-color); }
+    &--match   { color: var(--text-secondary); border-left: 1px solid var(--border-color); }
+    &--ask     { color: var(--color-up);       border-left: 1px solid var(--border-color); }
+    &--price   { color: var(--text-secondary); border-left: 1px solid var(--border-color); }
+    &--foreign { color: var(--text-secondary); border-left: 1px solid var(--border-color); }
+  }
+
+
+  &__row {
+    border-bottom: 1px solid var(--border-color-light);
+    transition: background $transition-fast;
+
+    &:hover { background-color: var(--bg-row-hover); }
+
+    td {
+      padding: 7px 7px;
+      text-align: right;
+      white-space: nowrap;
+      color: var(--text-secondary);
+
+      &.col-symbol {
+        text-align: left;
+        font-weight: 500;
+        color: var(--text-primary);
+        font-size: $font-size-base;
+      }
+
+      &.col-small  { font-size: $font-size-sm; }
+      &.col-price  { font-size: $font-size-sm; }
+      &.col-vol    { font-size: $font-size-sm; color: var(--text-secondary); }
+      &.col-change { font-size: $font-size-sm; }
+    }
+  }
+
+  .th-sticky {
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    background-color: var(--bg-toolbar);
+    border-right: 1px solid var(--border-color);
+  }
+
+  &__row td.th-sticky {
+    background-color: var(--bg-primary);
+  }
+
+  &__row:hover td.th-sticky {
+    background-color: var(--bg-row-hover);
+  }
+}
