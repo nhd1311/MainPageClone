@@ -1,12 +1,10 @@
-import IndexTable from '../IndexTable/IndexTable';
-import StockBoard from '../StockBoard/StockBoard';
+import Dashboard from '../Dashboard/Dashboard';
 import './PriceBoard.scss';
 
 function PriceBoard() {
   return (
     <div className="price-board">
-      <IndexTable />
-      <StockBoard />
+      <Dashboard />
     </div>
   );
 }

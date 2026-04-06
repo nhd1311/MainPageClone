@@ -1,5 +1,6 @@
 import TopBar from '../Topbar/Topbar';
 import Navbar from '../NavBar/NavBar';
+import BottomBar from '../BottomBar/BottomBar';
 import './MainLayout.scss';
 
 function MainLayout({ children }) {
@@ -10,6 +11,7 @@ function MainLayout({ children }) {
       <main className="main-layout__content">
         {children}
       </main>
+      <BottomBar />
     </div>
   );
 }

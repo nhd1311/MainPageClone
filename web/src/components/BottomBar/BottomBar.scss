@@ -1,0 +1,38 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.bottom-bar {
+  @include flex-center;
+  height: $bottombar-height;
+  background-color: var(--bg-navbar);
+  border-top: 1px solid var(--border-color);
+  padding: 0 12px;
+  gap: 8px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 80;
+
+  &__btn {
+    @include btn-reset;
+    @include flex-center-all;
+    height: 28px;
+    padding: 0 20px;
+    border-radius: 3px;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: filter $transition-fast;
+
+    &:hover { filter: brightness(1.1); }
+
+    &--order {
+      background-color: #1d4ed8;
+      color: #ffffff;
+    }
+
+    &--book {
+      background-color: var(--bg-tab-active);
+      color: #ffffff;
+    }
+  }
+}
