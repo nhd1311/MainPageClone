@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import IndexCard from '../IndexCard/IndexCard';
+import IndexTable from '../IndexTable/IndexTable';
 import TabBar from '../TabBar/TabBar';
 import StockBoard from '../StockBoard/StockBoard';
 import './Dashboard.scss';
@@ -11,7 +11,7 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-      <IndexCard />
+      <IndexTable />
       <TabBar activeTab={activeTab} onTabChange={setActiveTab} />
       <StockBoard activeTab={activeTab} />
     </div>

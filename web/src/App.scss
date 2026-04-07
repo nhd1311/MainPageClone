@@ -51,3 +51,9 @@ body {
 .text-ceiling { color: var(--color-ceiling); }
 .text-floor   { color: var(--color-floor); }
 .text-muted   { color: var(--text-muted); }
+
+/* Correct scrollbar selectors (the ones above are ignored by browsers) */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #484f58; }

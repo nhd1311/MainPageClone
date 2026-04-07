@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import MainLayout from './components/MainLayout/MainLayout';
 import PriceBoard from './components/PriceBoard/PriceBoard';
 import './App.scss';
@@ -15,6 +15,7 @@ function App() {
             </MainLayout>
           }
         />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );
