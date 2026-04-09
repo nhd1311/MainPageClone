@@ -8,7 +8,6 @@
   min-height: 0;
   overflow: hidden;
 
-  // ── Table wrap (scroll area) ─────────────────────────────────────────────
 
   &__table-wrap {
     flex: 1;
@@ -24,7 +23,6 @@
     font-variant-numeric: tabular-nums;
   }
 
-  // ── Header ───────────────────────────────────────────────────────────────
 
   &__thead {
     position: sticky;
@@ -58,16 +56,25 @@
     &.col-symbol { text-align: left; }
   }
 
-  // Màu nhóm header
   .th-group {
-    &--bid     { color: var(--color-up);       border-left: 1px solid var(--border-color); }
-    &--match   { color: var(--text-secondary);  border-left: 1px solid var(--border-color); }
-    &--ask     { color: var(--color-up);        border-left: 1px solid var(--border-color); }
-    &--price   { color: var(--text-secondary);  border-left: 1px solid var(--border-color); }
-    &--foreign { color: var(--text-secondary);  border-left: 1px solid var(--border-color); }
+    &--bid     { color: var(--text-secondary);  border-left: 2px solid var(--border-color); }
+    &--match   { color: var(--text-secondary);  border-left: 2px solid var(--border-color); }
+    &--ask     { color: var(--text-secondary);  border-left: 2px solid var(--border-color); }
+    &--total   { color: var(--text-secondary);  border-left: 2px solid var(--border-color); text-align: center; vertical-align: middle; }
+    &--price   { color: var(--text-secondary);  border-left: 2px solid var(--border-color); }
+    &--foreign { color: var(--text-secondary);  border-left: 2px solid var(--border-color); }
   }
 
-  // ── Rows ─────────────────────────────────────────────────────────────────
+  .th-base {
+    background-color: var(--bg-toolbar);
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .gs {
+    border-left: 2px solid var(--border-color) !important;
+  }
+
 
   &__row {
     border-bottom: 1px solid var(--border-color-light);
@@ -75,13 +82,11 @@
 
     &:hover { background-color: var(--bg-row-hover); }
 
-    // Highlight khi giá khớp = giá trần
     &.row--ceiling {
       background-color: rgba(192, 132, 252, 0.12);
       &:hover { background-color: rgba(192, 132, 252, 0.2); }
     }
 
-    // Highlight khi giá khớp = giá sàn
     &.row--floor {
       background-color: rgba(59, 130, 246, 0.12);
       &:hover { background-color: rgba(59, 130, 246, 0.2); }
@@ -102,10 +107,15 @@
       }
 
       &.col-vol { color: var(--text-secondary); }
+
+      &.text-up      { color: var(--color-up); }
+      &.text-down    { color: var(--color-down); }
+      &.text-ref     { color: var(--color-ref); }
+      &.text-ceiling { color: var(--color-ceiling); }
+      &.text-floor   { color: var(--color-floor); }
     }
   }
 
-  // ── Sticky cột đầu ───────────────────────────────────────────────────────
 
   .th-sticky {
     position: sticky;

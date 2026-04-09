@@ -50,28 +50,3 @@ export function formatChange(value) {
   const sign = value > 0 ? '+' : '';
   return `${sign}${value.toFixed(2)}`;
 }
-
-export function formatAvg(value) {
-  if (value == null || value === 0) return '';
-  return value.toFixed(2);
-}
-
-export function formatLow(value) {
-  if (value == null || value === 0) return '';
-  return value.toFixed(2);
-}
-
-export function formatHigh(value) {
-  if (value == null || value === 0) return '';
-  return value.toFixed(2);
-}
-
-export function formatOpen(value) {
-  if (value == null || value === 0) return '';
-  return value.toFixed(2);
-}
-
-export function formatForeign(value) {
-  if (value == null || value === 0) return '';
-  return value.toFixed(1);
-}

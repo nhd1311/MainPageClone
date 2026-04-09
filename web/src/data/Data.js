@@ -341,6 +341,322 @@ export const stockData = [
     avg: 60.92, low: 60.40, high: 61.20, open: 61.10,
     foreignBuy: 24.6, foreignSell: 28.9,
   },
+
+  // ── HNX ────────────────────────────────────────────────────────────────────
+  {
+    symbol: 'CEO', tab: 'HNX',
+    ceiling: 8.60, floor: 7.40, ref: 8.00,
+    bid: [
+      { price: 7.90, vol: 185.4 }, { price: 7.80, vol: 264.2 }, { price: 7.70, vol: 412.8 },
+    ],
+    matched: { price: 7.90, vol: 326.5, change: -0.10, pctChange: -1.25 },
+    ask: [
+      { price: 7.90, vol: 158.3 }, { price: 8.00, vol: 285.6 }, { price: 8.10, vol: 342.1 },
+    ],
+    totalVol: 8542.3, avg: 7.88, low: 7.60, high: 8.10, open: 8.00,
+    foreignBuy: 45.2, foreignSell: 68.4,
+  },
+  {
+    symbol: 'HUT', tab: 'HNX',
+    ceiling: 22.1, floor: 19.20, ref: 20.65,
+    bid: [
+      { price: 20.50, vol: 28.4 }, { price: 20.40, vol: 42.6 }, { price: 20.30, vol: 68.2 },
+    ],
+    matched: { price: 20.60, vol: 54.8, change: -0.05, pctChange: -0.24 },
+    ask: [
+      { price: 20.60, vol: 22.4 }, { price: 20.70, vol: 38.5 }, { price: 20.80, vol: 56.2 },
+    ],
+    totalVol: 845.6, avg: 20.55, low: 20.20, high: 20.90, open: 20.65,
+    foreignBuy: 8.4, foreignSell: 6.2,
+  },
+  {
+    symbol: 'IDC', tab: 'HNX',
+    ceiling: 42.5, floor: 36.90, ref: 39.70,
+    bid: [
+      { price: 39.40, vol: 12.6 }, { price: 39.20, vol: 8.4 }, { price: 39.00, vol: 15.8 },
+    ],
+    matched: { price: 39.50, vol: 18.4, change: -0.20, pctChange: -0.50 },
+    ask: [
+      { price: 39.50, vol: 6.2 }, { price: 39.70, vol: 12.4 }, { price: 39.90, vol: 18.6 },
+    ],
+    totalVol: 284.5, avg: 39.45, low: 39.00, high: 39.90, open: 39.70,
+    foreignBuy: 14.2, foreignSell: 12.8,
+  },
+  {
+    symbol: 'MBG', tab: 'HNX',
+    ceiling: 32.5, floor: 28.20, ref: 30.35,
+    bid: [
+      { price: 30.10, vol: 18.4 }, { price: 30.00, vol: 24.6 }, { price: 29.90, vol: 38.2 },
+    ],
+    matched: { price: 30.20, vol: 28.4, change: -0.15, pctChange: -0.49 },
+    ask: [
+      { price: 30.20, vol: 12.6 }, { price: 30.30, vol: 18.4 }, { price: 30.40, vol: 24.8 },
+    ],
+    totalVol: 385.4, avg: 30.15, low: 29.80, high: 30.50, open: 30.35,
+    foreignBuy: 12.4, foreignSell: 10.2,
+  },
+  {
+    symbol: 'NVB', tab: 'HNX',
+    ceiling: 14.3, floor: 12.40, ref: 13.35,
+    bid: [
+      { price: 13.20, vol: 84.6 }, { price: 13.10, vol: 126.3 }, { price: 13.00, vol: 248.5 },
+    ],
+    matched: { price: 13.30, vol: 156.2, change: -0.05, pctChange: -0.37 },
+    ask: [
+      { price: 13.30, vol: 42.1 }, { price: 13.40, vol: 88.4 }, { price: 13.50, vol: 165.2 },
+    ],
+    totalVol: 3256.8, avg: 13.28, low: 13.00, high: 13.50, open: 13.35,
+    foreignBuy: 28.4, foreignSell: 35.6,
+  },
+  {
+    symbol: 'PGS', tab: 'HNX',
+    ceiling: 38.4, floor: 33.40, ref: 35.90,
+    bid: [
+      { price: 35.60, vol: 8.4 }, { price: 35.50, vol: 12.6 }, { price: 35.40, vol: 18.2 },
+    ],
+    matched: { price: 35.70, vol: 15.8, change: -0.20, pctChange: -0.56 },
+    ask: [
+      { price: 35.70, vol: 6.4 }, { price: 35.80, vol: 8.6 }, { price: 35.90, vol: 12.4 },
+    ],
+    totalVol: 215.6, avg: 35.65, low: 35.30, high: 36.00, open: 35.90,
+    foreignBuy: 5.8, foreignSell: 4.2,
+  },
+  {
+    symbol: 'PVI', tab: 'HNX',
+    ceiling: 52.0, floor: 45.10, ref: 48.55,
+    bid: [
+      { price: 48.20, vol: 4.8 }, { price: 48.00, vol: 2.6 }, { price: 47.80, vol: 6.4 },
+    ],
+    matched: { price: 48.30, vol: 12.6, change: -0.25, pctChange: -0.52 },
+    ask: [
+      { price: 48.30, vol: 3.2 }, { price: 48.50, vol: 5.8 }, { price: 48.70, vol: 4.2 },
+    ],
+    totalVol: 148.6, avg: 48.25, low: 47.80, high: 48.80, open: 48.55,
+    foreignBuy: 8.4, foreignSell: 6.2,
+  },
+  {
+    symbol: 'PVS', tab: 'HNX',
+    ceiling: 28.9, floor: 25.10, ref: 27.00,
+    bid: [
+      { price: 26.80, vol: 15.2 }, { price: 26.70, vol: 8.4 }, { price: 26.60, vol: 22.1 },
+    ],
+    matched: { price: 26.90, vol: 42.5, change: -0.10, pctChange: -0.37 },
+    ask: [
+      { price: 26.90, vol: 5.3 }, { price: 27.00, vol: 18.6 }, { price: 27.10, vol: 31.2 },
+    ],
+    totalVol: 624.3, avg: 26.85, low: 26.50, high: 27.10, open: 27.00,
+    foreignBuy: 38.4, foreignSell: 45.2,
+  },
+  {
+    symbol: 'SCI', tab: 'HNX',
+    ceiling: 26.0, floor: 22.60, ref: 24.30,
+    bid: [
+      { price: 24.10, vol: 14.6 }, { price: 24.00, vol: 22.4 }, { price: 23.90, vol: 35.8 },
+    ],
+    matched: { price: 24.20, vol: 32.4, change: -0.10, pctChange: -0.41 },
+    ask: [
+      { price: 24.20, vol: 10.4 }, { price: 24.30, vol: 15.8 }, { price: 24.40, vol: 22.6 },
+    ],
+    totalVol: 428.2, avg: 24.15, low: 23.80, high: 24.50, open: 24.30,
+    foreignBuy: 8.6, foreignSell: 6.4,
+  },
+  {
+    symbol: 'SHS', tab: 'HNX',
+    ceiling: 18.2, floor: 15.80, ref: 17.00,
+    bid: [
+      { price: 16.90, vol: 42.3 }, { price: 16.80, vol: 28.7 }, { price: 16.70, vol: 61.5 },
+    ],
+    matched: { price: 17.00, vol: 88.4, change: 0, pctChange: 0 },
+    ask: [
+      { price: 17.00, vol: 34.2 }, { price: 17.10, vol: 52.8 }, { price: 17.20, vol: 78.1 },
+    ],
+    totalVol: 1842.6, avg: 16.95, low: 16.60, high: 17.20, open: 17.00,
+    foreignBuy: 12.5, foreignSell: 9.8,
+  },
+  {
+    symbol: 'TNG', tab: 'HNX',
+    ceiling: 18.7, floor: 16.20, ref: 17.45,
+    bid: [
+      { price: 17.30, vol: 32.4 }, { price: 17.20, vol: 48.6 }, { price: 17.10, vol: 62.8 },
+    ],
+    matched: { price: 17.40, vol: 45.2, change: -0.05, pctChange: -0.29 },
+    ask: [
+      { price: 17.40, vol: 18.4 }, { price: 17.50, vol: 28.6 }, { price: 17.60, vol: 42.4 },
+    ],
+    totalVol: 648.2, avg: 17.35, low: 17.00, high: 17.60, open: 17.45,
+    foreignBuy: 6.4, foreignSell: 8.2,
+  },
+  {
+    symbol: 'VCS', tab: 'HNX',
+    ceiling: 72.8, floor: 63.20, ref: 68.00,
+    bid: [
+      { price: 67.50, vol: 3.2 }, { price: 67.20, vol: 1.8 }, { price: 67.00, vol: 5.6 },
+    ],
+    matched: { price: 67.80, vol: 8.4, change: -0.20, pctChange: -0.29 },
+    ask: [
+      { price: 67.80, vol: 2.1 }, { price: 68.00, vol: 4.5 }, { price: 68.20, vol: 3.8 },
+    ],
+    totalVol: 98.4, avg: 67.65, low: 67.00, high: 68.20, open: 68.00,
+    foreignBuy: 4.2, foreignSell: 3.8,
+  },
+
+  // ── UPCOM ───────────────────────────────────────────────────────────────────
+  {
+    symbol: 'ACV', tab: 'UPCOM',
+    ceiling: 102.4, floor: 88.90, ref: 95.65,
+    bid: [
+      { price: 95.00, vol: 2.4 }, { price: 94.80, vol: 1.6 }, { price: 94.60, vol: 3.2 },
+    ],
+    matched: { price: 95.20, vol: 4.8, change: -0.45, pctChange: -0.47 },
+    ask: [
+      { price: 95.20, vol: 1.8 }, { price: 95.50, vol: 2.4 }, { price: 95.80, vol: 3.6 },
+    ],
+    totalVol: 58.4, avg: 95.15, low: 94.50, high: 95.80, open: 95.65,
+    foreignBuy: 4.2, foreignSell: 3.8,
+  },
+  {
+    symbol: 'BSR', tab: 'UPCOM',
+    ceiling: 24.5, floor: 21.30, ref: 22.90,
+    bid: [
+      { price: 22.70, vol: 48.6 }, { price: 22.60, vol: 82.4 }, { price: 22.50, vol: 124.8 },
+    ],
+    matched: { price: 22.80, vol: 86.4, change: -0.10, pctChange: -0.44 },
+    ask: [
+      { price: 22.80, vol: 28.4 }, { price: 22.90, vol: 56.8 }, { price: 23.00, vol: 84.2 },
+    ],
+    totalVol: 1842.6, avg: 22.75, low: 22.40, high: 23.00, open: 22.90,
+    foreignBuy: 42.6, foreignSell: 56.8,
+  },
+  {
+    symbol: 'FOX', tab: 'UPCOM',
+    ceiling: 68.5, floor: 59.50, ref: 64.00,
+    bid: [
+      { price: 63.70, vol: 3.8 }, { price: 63.50, vol: 2.4 }, { price: 63.30, vol: 4.6 },
+    ],
+    matched: { price: 63.80, vol: 6.4, change: -0.20, pctChange: -0.31 },
+    ask: [
+      { price: 63.80, vol: 2.6 }, { price: 64.00, vol: 3.8 }, { price: 64.20, vol: 5.2 },
+    ],
+    totalVol: 85.4, avg: 63.75, low: 63.20, high: 64.30, open: 64.00,
+    foreignBuy: 4.2, foreignSell: 3.6,
+  },
+  {
+    symbol: 'GEX', tab: 'UPCOM',
+    ceiling: 20.8, floor: 18.10, ref: 19.45,
+    bid: [
+      { price: 19.30, vol: 38.6 }, { price: 19.20, vol: 56.4 }, { price: 19.10, vol: 84.2 },
+    ],
+    matched: { price: 19.40, vol: 62.8, change: -0.05, pctChange: -0.26 },
+    ask: [
+      { price: 19.40, vol: 24.6 }, { price: 19.50, vol: 38.4 }, { price: 19.60, vol: 56.2 },
+    ],
+    totalVol: 985.4, avg: 19.35, low: 19.00, high: 19.70, open: 19.45,
+    foreignBuy: 18.4, foreignSell: 22.6,
+  },
+  {
+    symbol: 'HVN', tab: 'UPCOM',
+    ceiling: 26.4, floor: 22.90, ref: 24.65,
+    bid: [
+      { price: 24.40, vol: 18.6 }, { price: 24.20, vol: 28.4 }, { price: 24.00, vol: 42.6 },
+    ],
+    matched: { price: 24.50, vol: 35.8, change: -0.15, pctChange: -0.61 },
+    ask: [
+      { price: 24.50, vol: 12.4 }, { price: 24.60, vol: 18.6 }, { price: 24.80, vol: 28.4 },
+    ],
+    totalVol: 524.6, avg: 24.45, low: 23.90, high: 24.90, open: 24.65,
+    foreignBuy: 14.6, foreignSell: 18.4,
+  },
+  {
+    symbol: 'MCH', tab: 'UPCOM',
+    ceiling: 82.5, floor: 71.70, ref: 77.10,
+    bid: [
+      { price: 76.80, vol: 4.6 }, { price: 76.60, vol: 2.8 }, { price: 76.40, vol: 5.4 },
+    ],
+    matched: { price: 76.90, vol: 8.4, change: -0.20, pctChange: -0.26 },
+    ask: [
+      { price: 76.90, vol: 3.2 }, { price: 77.10, vol: 4.8 }, { price: 77.30, vol: 6.4 },
+    ],
+    totalVol: 124.6, avg: 76.85, low: 76.30, high: 77.40, open: 77.10,
+    foreignBuy: 8.6, foreignSell: 6.4,
+  },
+  {
+    symbol: 'OIL', tab: 'UPCOM',
+    ceiling: 16.8, floor: 14.60, ref: 15.70,
+    bid: [
+      { price: 15.60, vol: 62.4 }, { price: 15.50, vol: 98.6 }, { price: 15.40, vol: 148.2 },
+    ],
+    matched: { price: 15.60, vol: 115.4, change: -0.10, pctChange: -0.64 },
+    ask: [
+      { price: 15.60, vol: 45.2 }, { price: 15.70, vol: 68.4 }, { price: 15.80, vol: 98.6 },
+    ],
+    totalVol: 2456.8, avg: 15.58, low: 15.30, high: 15.90, open: 15.70,
+    foreignBuy: 28.4, foreignSell: 38.6,
+  },
+  {
+    symbol: 'SBS', tab: 'UPCOM',
+    ceiling: 12.4, floor: 10.80, ref: 11.60,
+    bid: [
+      { price: 11.50, vol: 68.4 }, { price: 11.40, vol: 105.6 }, { price: 11.30, vol: 165.2 },
+    ],
+    matched: { price: 11.50, vol: 125.4, change: -0.10, pctChange: -0.86 },
+    ask: [
+      { price: 11.50, vol: 45.6 }, { price: 11.60, vol: 82.4 }, { price: 11.70, vol: 128.6 },
+    ],
+    totalVol: 2845.6, avg: 11.48, low: 11.20, high: 11.70, open: 11.60,
+    foreignBuy: 18.4, foreignSell: 24.6,
+  },
+  {
+    symbol: 'VCF', tab: 'UPCOM',
+    ceiling: 225.0, floor: 195.40, ref: 210.20,
+    bid: [
+      { price: 209.00, vol: 0.4 }, { price: 208.00, vol: 0.2 }, { price: 207.00, vol: 0.6 },
+    ],
+    matched: { price: 209.50, vol: 0.8, change: -0.70, pctChange: -0.33 },
+    ask: [
+      { price: 209.50, vol: 0.3 }, { price: 210.00, vol: 0.5 }, { price: 211.00, vol: 0.4 },
+    ],
+    totalVol: 8.6, avg: 209.40, low: 207.00, high: 211.00, open: 210.20,
+    foreignBuy: 0.2, foreignSell: 0.4,
+  },
+  {
+    symbol: 'VEA', tab: 'UPCOM',
+    ceiling: 42.5, floor: 36.90, ref: 39.70,
+    bid: [
+      { price: 39.50, vol: 8.4 }, { price: 39.30, vol: 12.6 }, { price: 39.10, vol: 18.4 },
+    ],
+    matched: { price: 39.60, vol: 15.8, change: -0.10, pctChange: -0.25 },
+    ask: [
+      { price: 39.60, vol: 5.2 }, { price: 39.80, vol: 8.4 }, { price: 40.00, vol: 12.6 },
+    ],
+    totalVol: 285.4, avg: 39.55, low: 39.10, high: 40.00, open: 39.70,
+    foreignBuy: 18.4, foreignSell: 15.2,
+  },
+  {
+    symbol: 'VGI', tab: 'UPCOM',
+    ceiling: 18.5, floor: 16.10, ref: 17.30,
+    bid: [
+      { price: 17.10, vol: 28.6 }, { price: 17.00, vol: 45.4 }, { price: 16.90, vol: 68.2 },
+    ],
+    matched: { price: 17.20, vol: 48.6, change: -0.10, pctChange: -0.58 },
+    ask: [
+      { price: 17.20, vol: 18.4 }, { price: 17.30, vol: 28.6 }, { price: 17.40, vol: 42.4 },
+    ],
+    totalVol: 865.4, avg: 17.15, low: 16.90, high: 17.50, open: 17.30,
+    foreignBuy: 12.4, foreignSell: 15.6,
+  },
+  {
+    symbol: 'VTP', tab: 'UPCOM',
+    ceiling: 58.5, floor: 50.80, ref: 54.65,
+    bid: [
+      { price: 54.40, vol: 5.8 }, { price: 54.20, vol: 3.4 }, { price: 54.00, vol: 6.8 },
+    ],
+    matched: { price: 54.50, vol: 10.4, change: -0.15, pctChange: -0.27 },
+    ask: [
+      { price: 54.50, vol: 4.2 }, { price: 54.70, vol: 6.8 }, { price: 54.90, vol: 8.4 },
+    ],
+    totalVol: 165.8, avg: 54.45, low: 54.00, high: 55.00, open: 54.65,
+    foreignBuy: 8.4, foreignSell: 6.2,
+  },
 ];
 
 
