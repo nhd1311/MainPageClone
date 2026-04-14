@@ -1,52 +1,54 @@
 import StockRow from '../StockRow/StockRow';
 import { useStocks } from '../../controllers/useStocks';
+import { useLang } from '../../context/LanguageContext';
 import './StockBoard.scss';
 
-function TableHeader() {
+function TableHeader({ sb }) {
   return (
     <thead className="stock-board__thead">
       <tr className="stock-board__thead-group">
-        <th rowSpan={2} className="th-sticky th-base col-symbol">Mã CK</th>
-        <th rowSpan={2} className="th-base col-small text-ceiling">Trần</th>
-        <th rowSpan={2} className="th-base col-small text-floor">Sàn</th>
-        <th rowSpan={2} className="th-base col-small text-ref">TC</th>
+        <th rowSpan={2} className="th-sticky th-base col-symbol">{sb.symbol}</th>
+        <th rowSpan={2} className="th-base col-small text-ceiling">{sb.ceiling}</th>
+        <th rowSpan={2} className="th-base col-small text-floor">{sb.floor}</th>
+        <th rowSpan={2} className="th-base col-small text-ref">{sb.ref}</th>
 
-        <th colSpan={6} className="th-group th-group--bid">Thông tin dư mua</th>
-        <th colSpan={4} className="th-group th-group--match">Khớp lệnh</th>
-        <th colSpan={6} className="th-group th-group--ask">Thông tin dư bán</th>
+        <th colSpan={6} className="th-group th-group--bid">{sb.bidInfo}</th>
+        <th colSpan={4} className="th-group th-group--match">{sb.matchedInfo}</th>
+        <th colSpan={6} className="th-group th-group--ask">{sb.askInfo}</th>
 
-        <th rowSpan={2} className="th-group th-group--total col-vol">Tổng KL</th>
-        <th colSpan={4} className="th-group th-group--price">Giá</th>
-        <th colSpan={2} className="th-group th-group--foreign">Nhà ĐTNN</th>
+        <th rowSpan={2} className="th-group th-group--total col-vol">{sb.totalVol}</th>
+
+        <th colSpan={4} className="th-group th-group--price">{sb.price}</th>
+        <th colSpan={2} className="th-group th-group--foreign">{sb.foreign}</th>
       </tr>
 
       <tr className="stock-board__thead-cols">
-        <th className="col-price gs gs--bid">Giá 3</th>
+        <th className="col-price gs gs--bid">{sb.price} 3</th>
         <th className="col-vol">KL 3</th>
-        <th className="col-price">Giá 2</th>
+        <th className="col-price">{sb.price} 2</th>
         <th className="col-vol">KL 2</th>
-        <th className="col-price">Giá 1</th>
+        <th className="col-price">{sb.price} 1</th>
         <th className="col-vol">KL 1</th>
 
-        <th className="col-price gs gs--match">Giá</th>
+        <th className="col-price gs gs--match">{sb.price}</th>
         <th className="col-vol">KL</th>
         <th className="col-change">+/-</th>
         <th className="col-change">%</th>
 
-        <th className="col-price gs gs--ask">Giá 1</th>
+        <th className="col-price gs gs--ask">{sb.price} 1</th>
         <th className="col-vol">KL 1</th>
-        <th className="col-price">Giá 2</th>
+        <th className="col-price">{sb.price} 2</th>
         <th className="col-vol">KL 2</th>
-        <th className="col-price">Giá 3</th>
+        <th className="col-price">{sb.price} 3</th>
         <th className="col-vol">KL 3</th>
 
-        <th className="col-price gs gs--price">TB</th>
-        <th className="col-price">Thấp</th>
-        <th className="col-price">Cao</th>
-        <th className="col-price">Mở cửa</th>
+        <th className="col-price gs gs--price">{sb.avg}</th>
+        <th className="col-price">{sb.low}</th>
+        <th className="col-price">{sb.high}</th>
+        <th className="col-price">{sb.open}</th>
 
-        <th className="col-vol gs gs--foreign">Mua</th>
-        <th className="col-vol">Bán ▾</th>
+        <th className="col-vol gs gs--foreign">{sb.buy}</th>
+        <th className="col-vol">{sb.sell} ▾</th>
       </tr>
     </thead>
   );
@@ -54,12 +56,13 @@ function TableHeader() {
 
 function StockBoard({ activeTab }) {
   const stocks = useStocks(activeTab);
+  const { t } = useLang();
 
   return (
     <div className="stock-board">
       <div className="stock-board__table-wrap">
         <table className="stock-board__table">
-          <TableHeader />
+          <TableHeader sb={t.stockBoard} />
           <tbody>
             {stocks.map((stock) => (
               <StockRow key={stock.symbol} stock={stock} />

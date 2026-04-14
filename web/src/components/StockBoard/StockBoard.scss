@@ -8,7 +8,6 @@
   min-height: 0;
   overflow: hidden;
 
-
   &__table-wrap {
     flex: 1;
     overflow: auto;
@@ -23,6 +22,7 @@
     font-variant-numeric: tabular-nums;
   }
 
+  // ── Header ───────────────────────────────────────────────────────────────
 
   &__thead {
     position: sticky;
@@ -40,7 +40,11 @@
     white-space: nowrap;
     color: var(--text-secondary);
 
-    &.th-base { background-color: var(--bg-primary); }
+    &.th-base {
+      background-color: var(--bg-toolbar);
+      vertical-align: middle;
+      text-align: center;
+    }
   }
 
   &__thead-cols th {
@@ -57,24 +61,17 @@
   }
 
   .th-group {
-    &--bid     { color: var(--text-secondary);  border-left: 2px solid var(--border-color); }
-    &--match   { color: var(--text-secondary);  border-left: 2px solid var(--border-color); }
-    &--ask     { color: var(--text-secondary);  border-left: 2px solid var(--border-color); }
-    &--total   { color: var(--text-secondary);  border-left: 2px solid var(--border-color); text-align: center; vertical-align: middle; }
-    &--price   { color: var(--text-secondary);  border-left: 2px solid var(--border-color); }
-    &--foreign { color: var(--text-secondary);  border-left: 2px solid var(--border-color); }
+    &--bid     { color: var(--text-secondary); border-left: 2px solid var(--border-color); }
+    &--match   { color: var(--text-secondary); border-left: 2px solid var(--border-color); }
+    &--ask     { color: var(--text-secondary); border-left: 2px solid var(--border-color); }
+    &--total   { color: var(--text-secondary); border-left: 2px solid var(--border-color); text-align: center; vertical-align: middle; }
+    &--price   { color: var(--text-secondary); border-left: 2px solid var(--border-color); }
+    &--foreign { color: var(--text-secondary); border-left: 2px solid var(--border-color); }
   }
 
-  .th-base {
-    background-color: var(--bg-toolbar);
-    vertical-align: middle;
-    text-align: center;
-  }
+  .gs { border-left: 2px solid var(--border-color) !important; }
 
-  .gs {
-    border-left: 2px solid var(--border-color) !important;
-  }
-
+  // ── Rows ─────────────────────────────────────────────────────────────────
 
   &__row {
     border-bottom: 1px solid var(--border-color-light);
@@ -108,14 +105,16 @@
 
       &.col-vol { color: var(--text-secondary); }
 
-      &.text-up      { color: var(--color-up); }
-      &.text-down    { color: var(--color-down); }
-      &.text-ref     { color: var(--color-ref); }
+      // Khai báo trong scope td để specificity (0,3,1) thắng (0,2,1)
+      &.text-up      { color: var(--color-up);      }
+      &.text-down    { color: var(--color-down);    }
+      &.text-ref     { color: var(--color-ref);     }
       &.text-ceiling { color: var(--color-ceiling); }
-      &.text-floor   { color: var(--color-floor); }
+      &.text-floor   { color: var(--color-floor);   }
     }
   }
 
+  // ── Sticky cột đầu ───────────────────────────────────────────────────────
 
   .th-sticky {
     position: sticky;
@@ -125,12 +124,8 @@
     border-right: 1px solid var(--border-color);
   }
 
-  &__row td.th-sticky {
-    background-color: var(--bg-primary);
-  }
-
+  &__row td.th-sticky              { background-color: var(--bg-primary); }
   &__row.row--ceiling td.th-sticky { background-color: rgba(192, 132, 252, 0.12); }
   &__row.row--floor   td.th-sticky { background-color: rgba(59, 130, 246, 0.12); }
-
-  &__row:hover td.th-sticky { background-color: var(--bg-row-hover); }
+  &__row:hover        td.th-sticky { background-color: var(--bg-row-hover); }
 }

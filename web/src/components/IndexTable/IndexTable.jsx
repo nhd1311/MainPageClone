@@ -7,20 +7,23 @@ import {
   formatKLGD,
   getIndexClass,
 } from '../../controllers/indexController';
+import { useLang } from '../../context/LanguageContext';
 import './IndexTable.scss';
 
 function MarketSummary() {
   const indices = getAllData();
+  const { t } = useLang();
+  const it = t.indexTable;
 
   return (
     <table className="index-table__summary-table">
       <thead className="index-table__summary-thead">
         <tr>
-          <th className="mc-col--name">Chỉ số chính</th>
+          <th className="mc-col--name">{it.mainIndex}</th>
           <th className="mc-col--val" colSpan={2}>+ / - ▾</th>
-          <th className="mc-col--num">KLGD (Triệu)</th>
-          <th className="mc-col--num">GTGD (Tỷ)</th>
-          <th className="mc-col--ud" colSpan={3}>CK Tăng/Giảm</th>
+          <th className="mc-col--num">{it.volMil}</th>
+          <th className="mc-col--num">{it.valBil}</th>
+          <th className="mc-col--ud" colSpan={3}>{it.upDown}</th>
         </tr>
       </thead>
       <tbody className="index-table__summary-tbody">

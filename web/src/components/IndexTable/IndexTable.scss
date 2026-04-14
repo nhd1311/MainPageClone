@@ -62,6 +62,10 @@
 
     &.mc-col--pct { font-size: $font-size-sm; }
     &.mc-col--ud  { text-align: center; }
+
+    &.text-up   { color: var(--color-up); }
+    &.text-down { color: var(--color-down); }
+    &.text-ref  { color: var(--color-ref); }
   }
 
   &__summary-tbody tr:last-child td { border-bottom: none; }

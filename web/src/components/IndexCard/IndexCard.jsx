@@ -5,6 +5,7 @@ import {
   getIndexClass,
   normalizeChartData,
 } from '../../controllers/indexController';
+import { useLang } from '../../context/LanguageContext';
 import './IndexCard.scss';
 
 function SparklineSVG({ chartData, refValue, colorClass }) {
@@ -72,12 +73,21 @@ function TimeAxis({ chartData }) {
 }
 
 function IndexCard({ data }) {
+  const { t } = useLang();
+  const ic = t.indexCard;
+
   const colorClass = getIndexClass(data.pctChange);
   const lineClass  = colorClass.replace('text-', '');
 
   const volStr = data.totalVol
     ? data.totalVol.toLocaleString('en-US')
     : '0';
+
+  const sessionMap = {
+    'Phiên mở cửa':   ic.openSession,
+    'Phiên liên tục': ic.contSession,
+  };
+  const sessionLabel = data.session ? (sessionMap[data.session] ?? data.session) : null;
 
   return (
     <div className="index-card">
@@ -117,10 +127,10 @@ function IndexCard({ data }) {
 
       <div className="index-card__stats">
         <span className="index-card__vol">
-          <span>{volStr}</span> CP
+          <span>{volStr}</span> {ic.cp}
         </span>
         <span className="index-card__gtgd">
-          <span>{formatKLGD(data.gtgd)}</span> Tỷ
+          <span>{formatKLGD(data.gtgd)}</span> {ic.bil}
         </span>
       </div>
 
@@ -130,8 +140,8 @@ function IndexCard({ data }) {
           <span className="index-card__neutral">{data.ref}</span>
           <span className="index-card__down">↓{data.down}({data.downNew ?? 0})</span>
         </div>
-        {data.session && (
-          <span className="index-card__session">{data.session}</span>
+        {sessionLabel && (
+          <span className="index-card__session">{sessionLabel}</span>
         )}
       </div>
 
