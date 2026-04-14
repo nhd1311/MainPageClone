@@ -22,7 +22,6 @@
     font-variant-numeric: tabular-nums;
   }
 
-  // ── Header ───────────────────────────────────────────────────────────────
 
   &__thead {
     position: sticky;
@@ -71,7 +70,6 @@
 
   .gs { border-left: 2px solid var(--border-color) !important; }
 
-  // ── Rows ─────────────────────────────────────────────────────────────────
 
   &__row {
     border-bottom: 1px solid var(--border-color-light);
@@ -93,7 +91,7 @@
       padding: 7px 7px;
       text-align: right;
       white-space: nowrap;
-      color: var(--text-secondary);
+      color: var(--text-secondary); 
       font-size: $font-size-sm;
 
       &.col-symbol {
@@ -103,18 +101,14 @@
         font-size: $font-size-base;
       }
 
-      &.col-vol { color: var(--text-secondary); }
-
-      // Khai báo trong scope td để specificity (0,3,1) thắng (0,2,1)
-      &.text-up      { color: var(--color-up);      }
-      &.text-down    { color: var(--color-down);    }
-      &.text-ref     { color: var(--color-ref);     }
-      &.text-ceiling { color: var(--color-ceiling); }
-      &.text-floor   { color: var(--color-floor);   }
+      &.text-up      { color: var(--color-up) !important;      }
+      &.text-down    { color: var(--color-down) !important;    }
+      &.text-ref     { color: var(--color-ref) !important;     }
+      &.text-ceiling { color: var(--color-ceiling) !important; }
+      &.text-floor   { color: var(--color-floor) !important;   }
     }
   }
 
-  // ── Sticky cột đầu ───────────────────────────────────────────────────────
 
   .th-sticky {
     position: sticky;

@@ -7,7 +7,7 @@ function TableHeader({ sb }) {
   return (
     <thead className="stock-board__thead">
       <tr className="stock-board__thead-group">
-        <th rowSpan={2} className="th-sticky th-base col-symbol">{sb.symbol}</th>
+        <th rowSpan={2} className="th-sticky th-base col-stock">{sb.stock}</th>
         <th rowSpan={2} className="th-base col-small text-ceiling">{sb.ceiling}</th>
         <th rowSpan={2} className="th-base col-small text-floor">{sb.floor}</th>
         <th rowSpan={2} className="th-base col-small text-ref">{sb.ref}</th>
@@ -65,7 +65,7 @@ function StockBoard({ activeTab }) {
           <TableHeader sb={t.stockBoard} />
           <tbody>
             {stocks.map((stock) => (
-              <StockRow key={stock.symbol} stock={stock} />
+              <StockRow key={stock.stock} stock={stock} />
             ))}
           </tbody>
         </table>
