@@ -1,13 +1,15 @@
+import { useLang } from '../../context/LanguageContext';
 import './BottomBar.scss';
 
 function BottomBar() {
+  const { t } = useLang();
   return (
     <div className="bottom-bar">
       <button className="bottom-bar__btn bottom-bar__btn--order">
-        Đặt lệnh nhanh
+        {t.bottomBar.quickOrder}
       </button>
       <button className="bottom-bar__btn bottom-bar__btn--book">
-        Sổ lệnh
+        {t.bottomBar.orderBook}
       </button>
     </div>
   );
