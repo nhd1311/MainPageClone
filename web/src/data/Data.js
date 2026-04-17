@@ -703,9 +703,9 @@ export const marketData = [
   {
     name: 'VN30',
     value: 1815.70, change: 3.77, pctChange: 0.21, refValue: 1811.92,
-    klgd: 0.00, gtgd: 0.00, totalVol: 0,
-    up: 0, ref: 0, down: 0,
-    session: 'Phiên mở cửa', showCard: true,
+    klgd: 0.92, gtgd: 44.52, totalVol: 924800,
+    up: 18, ref: 7, down: 5,
+    session: 'Phiên liên tục', showCard: true,
     chartData: [
       { time: '09h', value: 1808 }, { time: '10h', value: 1811 },
       { time: '11h', value: 1809 }, { time: '12h', value: 1813 },
