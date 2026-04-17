@@ -7,3 +7,12 @@
   min-height: 0;
   overflow: hidden;
 }
+
+.dashboard__index-wrap {
+  overflow: hidden;
+  transition: max-height 0.25s ease, opacity 0.25s ease;
+
+  &--full   { max-height: 300px; opacity: 1; }
+  &--half   { max-height: 110px; opacity: 1; }
+  &--hidden { max-height: 0;     opacity: 0; }
+}

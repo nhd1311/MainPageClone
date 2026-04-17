@@ -3,7 +3,7 @@ import './TabBar.scss';
 
 const MAIN_TABS  = ['VN30', 'HNX', 'UPCOM'];
 
-function TabBar({ activeTab, onTabChange }) {
+function TabBar({ activeTab, onTabChange, collapseStep, onCollapse }) {
   const { t } = useLang();
   const tb = t.tabBar;
 
@@ -54,7 +54,9 @@ function TabBar({ activeTab, onTabChange }) {
 
       <div className="tab-bar__right">
         <button className="tab-bar__btn tab-bar__btn--icon" title={t.nav.dropdown.settings}>⚙</button>
-        <button className="tab-bar__btn tab-bar__btn--collapse">▲ {tb.collapse}</button>
+        <button className="tab-bar__btn tab-bar__btn--collapse" onClick={onCollapse}>
+          {collapseStep === 2 ? `▼ ${tb.expand}` : `▲ ${tb.collapse}`}
+        </button>
       </div>
     </div>
   );

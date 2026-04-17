@@ -74,7 +74,8 @@
       cw:          'Chứng quyền',
       etf:         'ETF HOSE',
       bond:        'Trái phiếu doanh nghiệp',
-      collapse:    'Thu gọn',
+      collapse:    'Hide',
+      expand:      'Extend',
     },
 
     // StockBoard header
@@ -193,7 +194,8 @@
       cw:          'Covered Warrants',
       etf:         'ETF',
       bond:        'Corporate Bonds',
-      collapse:    'Collapse',
+      collapse:    'Hide',
+      expand:      'Extend',
     },
 
     stockBoard: {
