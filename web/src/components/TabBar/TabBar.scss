@@ -10,7 +10,7 @@
   flex-shrink: 0;
   gap: 6px;
 
-  &__left  { @include flex-center; gap: 5px; min-width: 0; overflow: hidden; }
+  &__left  { @include flex-center; gap: 5px; min-width: 0; }
   &__right { @include flex-center; gap: 6px; flex-shrink: 0; }
 
   // ── Search input ──────────────────────────────────
@@ -124,12 +124,14 @@
 
   &__tab-extra {
     @include btn-reset;
+    @include flex-center;
     height: 28px;
     padding: 0 10px;
     font-size: $font-size-sm;
     color: var(--text-secondary);
     white-space: nowrap;
     border-radius: 3px;
+    gap: 4px;
     transition: background $transition-fast, color $transition-fast;
 
     &:hover { color: var(--text-primary); background: var(--bg-row-hover); }
@@ -137,6 +139,68 @@
     &--active {
       background: var(--bg-secondary);
       color: var(--text-primary);
+    }
+  }
+
+  // ── Industry dropdown ─────────────────────────────
+  &__industry {
+    position: relative;
+
+    &:hover > .tab-bar__industry-dropdown,
+    & > .tab-bar__industry-dropdown:hover {
+      display: flex;
+    }
+
+    &:hover > .tab-bar__tab-extra--industry {
+      background: var(--bg-tab-active);
+      color: #ffffff;
+
+      .tab-bar__caret { color: #ffffff; }
+    }
+  }
+
+  &__tab-extra--industry.tab-bar__tab-extra--active {
+    background: var(--bg-tab-active);
+    color: #ffffff;
+
+    .tab-bar__caret { color: #ffffff; }
+  }
+
+  &__industry-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    min-width: 260px;
+    max-height: 70vh;
+    overflow-y: auto;
+    flex-direction: column;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    padding: 4px 0;
+    z-index: 50;
+  }
+
+  &__industry-item {
+    @include btn-reset;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px 14px;
+    font-size: $font-size-sm;
+    color: var(--text-primary);
+    white-space: nowrap;
+    transition: background $transition-fast, color $transition-fast;
+
+    &:hover {
+      background: var(--bg-row-hover);
+      color: #ffffff;
+    }
+
+    &--active {
+      color: var(--bg-tab-active);
     }
   }
 }

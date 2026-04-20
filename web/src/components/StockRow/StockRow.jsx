@@ -14,7 +14,7 @@ function getRowHighlight(matchedPrice, ceiling, floor) {
   return '';
 }
 
-function StockRow({ stock }) {
+function StockRow({ stock, draggable, isDragOver, onDragStart, onDragOver, onDrop, onDragEnd }) {
   const { ceiling, floor, ref, bid, ask, matched } = stock;
 
   const rowClass     = getRowHighlight(matched.price, ceiling, floor);
@@ -38,9 +38,16 @@ function StockRow({ stock }) {
   ];
 
   return (
-    <tr className={`stock-board__row ${rowClass}`}>
+    <tr
+      className={`stock-board__row ${rowClass}${isDragOver ? ' row--drag-over' : ''}${draggable ? ' row--draggable' : ''}`}
+      draggable={draggable}
+      onDragStart={onDragStart}
+      onDragOver={onDragOver}
+      onDrop={onDrop}
+      onDragEnd={onDragEnd}
+    >
 
-      <td className="th-sticky col-symbol">{stock.symbol}</td>
+      <td className={`th-sticky col-symbol ${matchedClass}`}>{stock.symbol}</td>
       <td className="col-small text-ceiling">{formatPrice(ceiling)}</td>
       <td className="col-small text-floor">{formatPrice(floor)}</td>
       <td className="col-small text-ref">{formatPrice(ref)}</td>
