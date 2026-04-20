@@ -1,6 +1,6 @@
 export const stockData = [
   {
-    symbol: 'ACB', tab: 'VN30',
+    symbol: 'ACB', tab: 'VN30', industry: 'finance',
     ceiling: 25.4, floor: 22.1, ref: 23.75,
     bid: [
       { price: 23.60, vol: 51.1 },
@@ -18,7 +18,7 @@ export const stockData = [
     foreignBuy: 85.2, foreignSell: 102.4,
   },
   {
-    symbol: 'BID', tab: 'VN30',
+    symbol: 'BID', tab: 'VN30', industry: 'finance',
     ceiling: 42.2, floor: 36.70, ref: 39.45,
     bid: [
       { price: 39.55, vol: 5.1 },
@@ -36,7 +36,7 @@ export const stockData = [
     foreignBuy: 42.1, foreignSell: 38.6,
   },
   {
-    symbol: 'CTG', tab: 'VN30',
+    symbol: 'CTG', tab: 'VN30', industry: 'finance',
     ceiling: 36.4, floor: 31.70, ref: 34.05,
     bid: [
       { price: 34.40, vol: 2 },
@@ -54,7 +54,7 @@ export const stockData = [
     foreignBuy: 61.0, foreignSell: 54.8,
   },
   {
-    symbol: 'DGC', tab: 'VN30',
+    symbol: 'DGC', tab: 'VN30', industry: 'manufacturing',
     ceiling: 52.5, floor: 45.70, ref: 49.10,
     bid: [
       { price: 49.50, vol: 7.9 },
@@ -72,7 +72,7 @@ export const stockData = [
     foreignBuy: 18.5, foreignSell: 22.0,
   },
   {
-    symbol: 'FPT', tab: 'VN30',
+    symbol: 'FPT', tab: 'VN30', industry: 'tech',
     ceiling: 79.1, floor: 68.90, ref: 74.00,
     bid: [
       { price: 74.60, vol: 3.4 },
@@ -90,7 +90,7 @@ export const stockData = [
     foreignBuy: 124.6, foreignSell: 98.3,
   },
   {
-    symbol: 'GAS', tab: 'VN30',
+    symbol: 'GAS', tab: 'VN30', industry: 'utilities',
     ceiling: 86.4, floor: 75.20, ref: 80.80,
     bid: [
       { price: 81.10, vol: 6 },
@@ -108,7 +108,7 @@ export const stockData = [
     foreignBuy: 12.3, foreignSell: 8.7,
   },
   {
-    symbol: 'GVR', tab: 'VN30',
+    symbol: 'GVR', tab: 'VN30', industry: 'agriculture',
     ceiling: 35.4, floor: 30.80, ref: 33.10,
     bid: [
       { price: 33.30, vol: 1 },
@@ -126,7 +126,7 @@ export const stockData = [
     foreignBuy: 22.4, foreignSell: 19.8,
   },
   {
-    symbol: 'HDB', tab: 'VN30',
+    symbol: 'HDB', tab: 'VN30', industry: 'finance',
     ceiling: 26.9, floor: 23.45, ref: 25.20,
     bid: [
       { price: 25.10, vol: 39.8 },
@@ -144,7 +144,7 @@ export const stockData = [
     foreignBuy: 58.6, foreignSell: 71.2,
   },
   {
-    symbol: 'HPG', tab: 'VN30',
+    symbol: 'HPG', tab: 'VN30', industry: 'manufacturing',
     ceiling: 28.7, floor: 25.05, ref: 26.90,
     bid: [
       { price: 27.00, vol: 6 },
@@ -162,7 +162,7 @@ export const stockData = [
     foreignBuy: 210.5, foreignSell: 188.3,
   },
   {
-    symbol: 'LPB', tab: 'VN30',
+    symbol: 'LPB', tab: 'VN30', industry: 'finance',
     ceiling: 44.8, floor: 39.05, ref: 41.95,
     bid: [
       { price: 42.10, vol: 10.0 },
@@ -180,7 +180,7 @@ export const stockData = [
     foreignBuy: 14.2, foreignSell: 11.8,
   },
   {
-    symbol: 'MBB', tab: 'VN30',
+    symbol: 'MBB', tab: 'VN30', industry: 'finance',
     ceiling: 27.5, floor: 23.95, ref: 25.75,
     bid: [
       { price: 25.95, vol: 22.4 },
@@ -198,7 +198,7 @@ export const stockData = [
     foreignBuy: 302.4, foreignSell: 275.8,
   },
   {
-    symbol: 'MSN', tab: 'VN30',
+    symbol: 'MSN', tab: 'VN30', industry: 'manufacturing',
     ceiling: 80.0, floor: 69.60, ref: 74.80,
     bid: [
       { price: 75.40, vol: 1.0 },
@@ -216,7 +216,7 @@ export const stockData = [
     foreignBuy: 28.4, foreignSell: 32.1,
   },
   {
-    symbol: 'MWG', tab: 'VN30',
+    symbol: 'MWG', tab: 'VN30', industry: 'retail',
     ceiling: 86.4, floor: 75.20, ref: 80.80,
     bid: [
       { price: 80.80, vol: 36.7 },
@@ -234,7 +234,7 @@ export const stockData = [
     foreignBuy: 38.5, foreignSell: 42.0,
   },
   {
-    symbol: 'PLX', tab: 'VN30',
+    symbol: 'PLX', tab: 'VN30', industry: 'wholesale',
     ceiling: 44.2, floor: 38.55, ref: 41.40,
     bid: [
       { price: 41.90, vol: 5.0 },
@@ -252,7 +252,7 @@ export const stockData = [
     foreignBuy: 16.8, foreignSell: 14.2,
   },
   {
-    symbol: 'SAB', tab: 'VN30',
+    symbol: 'SAB', tab: 'VN30', industry: 'manufacturing',
     ceiling: 47.2, floor: 41.10, ref: 44.15,
     bid: [
       { price: 44.20, vol: 1 },
@@ -270,7 +270,7 @@ export const stockData = [
     foreignBuy: 5.2, foreignSell: 3.8,
   },
   {
-    symbol: 'SHB', tab: 'VN30',
+    symbol: 'SHB', tab: 'VN30', industry: 'finance',
     ceiling: 16.5, floor: 14.40, ref: 15.45,
     bid: [
       { price: 15.30, vol: 81.1 },
@@ -288,7 +288,7 @@ export const stockData = [
     foreignBuy: 48.3, foreignSell: 62.5,
   },
   {
-    symbol: 'SSB', tab: 'VN30',
+    symbol: 'SSB', tab: 'VN30', industry: 'finance',
     ceiling: 18.0, floor: 15.75, ref: 16.90,
     bid: [
       { price: 16.85, vol: 1.5 },
@@ -306,7 +306,7 @@ export const stockData = [
     foreignBuy: 8.4, foreignSell: 6.2,
   },
   {
-    symbol: 'SSI', tab: 'VN30',
+    symbol: 'SSI', tab: 'VN30', industry: 'finance',
     ceiling: 28.4, floor: 24.70, ref: 26.55,
     bid: [
       { price: 26.55, vol: 183.1 },
@@ -324,7 +324,7 @@ export const stockData = [
     foreignBuy: 186.4, foreignSell: 172.8,
   },
   {
-    symbol: 'STB', tab: 'VN30',
+    symbol: 'STB', tab: 'VN30', industry: 'finance',
     ceiling: 65.4, floor: 57.00, ref: 61.20,
     bid: [
       { price: 60.80, vol: 5.5 },
@@ -343,7 +343,7 @@ export const stockData = [
   },
 
   {
-    symbol: 'BCM', tab: 'VN30',
+    symbol: 'BCM', tab: 'VN30', industry: 'construction',
     ceiling: 45.50, floor: 39.55, ref: 42.50,
     bid: [
       { price: 42.20, vol: 8.4 }, { price: 42.10, vol: 12.6 }, { price: 42.00, vol: 22.4 },
@@ -356,7 +356,7 @@ export const stockData = [
     foreignBuy: 18.4, foreignSell: 22.6,
   },
   {
-    symbol: 'BVH', tab: 'VN30',
+    symbol: 'BVH', tab: 'VN30', industry: 'finance',
     ceiling: 55.80, floor: 48.55, ref: 52.15,
     bid: [
       { price: 51.80, vol: 3.2 }, { price: 51.60, vol: 5.8 }, { price: 51.40, vol: 8.4 },
@@ -369,7 +369,7 @@ export const stockData = [
     foreignBuy: 12.4, foreignSell: 10.2,
   },
   {
-    symbol: 'POW', tab: 'VN30',
+    symbol: 'POW', tab: 'VN30', industry: 'utilities',
     ceiling: 13.20, floor: 11.40, ref: 12.30,
     bid: [
       { price: 12.15, vol: 186.4 }, { price: 12.10, vol: 248.6 }, { price: 12.05, vol: 385.2 },
@@ -382,7 +382,7 @@ export const stockData = [
     foreignBuy: 148.6, foreignSell: 186.4,
   },
   {
-    symbol: 'TCB', tab: 'VN30',
+    symbol: 'TCB', tab: 'VN30', industry: 'finance',
     ceiling: 51.55, floor: 44.85, ref: 48.20,
     bid: [
       { price: 47.90, vol: 42.6 }, { price: 47.80, vol: 68.4 }, { price: 47.70, vol: 98.2 },
@@ -395,7 +395,7 @@ export const stockData = [
     foreignBuy: 386.4, foreignSell: 425.8,
   },
   {
-    symbol: 'TPB', tab: 'VN30',
+    symbol: 'TPB', tab: 'VN30', industry: 'finance',
     ceiling: 19.80, floor: 17.20, ref: 18.50,
     bid: [
       { price: 18.35, vol: 58.4 }, { price: 18.30, vol: 82.6 }, { price: 18.25, vol: 124.8 },
@@ -408,7 +408,7 @@ export const stockData = [
     foreignBuy: 62.4, foreignSell: 74.8,
   },
   {
-    symbol: 'VCB', tab: 'VN30',
+    symbol: 'VCB', tab: 'VN30', industry: 'finance',
     ceiling: 94.80, floor: 82.35, ref: 88.55,
     bid: [
       { price: 88.00, vol: 12.4 }, { price: 87.80, vol: 18.6 }, { price: 87.60, vol: 28.4 },
@@ -421,7 +421,7 @@ export const stockData = [
     foreignBuy: 184.6, foreignSell: 142.8,
   },
   {
-    symbol: 'VHM', tab: 'VN30',
+    symbol: 'VHM', tab: 'VN30', industry: 'construction',
     ceiling: 35.10, floor: 30.50, ref: 32.80,
     bid: [
       { price: 32.50, vol: 48.6 }, { price: 32.40, vol: 72.4 }, { price: 32.30, vol: 108.6 },
@@ -434,7 +434,7 @@ export const stockData = [
     foreignBuy: 248.6, foreignSell: 312.4,
   },
   {
-    symbol: 'VIC', tab: 'VN30',
+    symbol: 'VIC', tab: 'VN30', industry: 'construction',
     ceiling: 45.60, floor: 39.65, ref: 42.65,
     bid: [
       { price: 42.30, vol: 28.4 }, { price: 42.20, vol: 42.6 }, { price: 42.10, vol: 64.8 },
@@ -447,7 +447,7 @@ export const stockData = [
     foreignBuy: 148.4, foreignSell: 186.2,
   },
   {
-    symbol: 'VJC', tab: 'VN30',
+    symbol: 'VJC', tab: 'VN30', industry: 'transport',
     ceiling: 103.30, floor: 89.80, ref: 96.55,
     bid: [
       { price: 96.10, vol: 4.8 }, { price: 95.90, vol: 6.4 }, { price: 95.70, vol: 9.2 },
@@ -460,7 +460,7 @@ export const stockData = [
     foreignBuy: 28.4, foreignSell: 24.6,
   },
   {
-    symbol: 'VNM', tab: 'VN30',
+    symbol: 'VNM', tab: 'VN30', industry: 'manufacturing',
     ceiling: 66.70, floor: 57.95, ref: 62.30,
     bid: [
       { price: 62.00, vol: 18.4 }, { price: 61.80, vol: 28.6 }, { price: 61.60, vol: 42.4 },
@@ -473,7 +473,7 @@ export const stockData = [
     foreignBuy: 124.6, foreignSell: 98.4,
   },
   {
-    symbol: 'VPB', tab: 'VN30',
+    symbol: 'VPB', tab: 'VN30', industry: 'finance',
     ceiling: 23.70, floor: 20.60, ref: 22.15,
     bid: [
       { price: 22.00, vol: 82.4 }, { price: 21.95, vol: 124.6 }, { price: 21.90, vol: 186.8 },
@@ -488,7 +488,7 @@ export const stockData = [
 
   // ── HNX ────────────────────────────────────────────────────────────────────
   {
-    symbol: 'CEO', tab: 'HNX',
+    symbol: 'CEO', tab: 'HNX', industry: 'construction',
     ceiling: 8.60, floor: 7.40, ref: 8.00,
     bid: [
       { price: 7.90, vol: 185.4 }, { price: 7.80, vol: 264.2 }, { price: 7.70, vol: 412.8 },
@@ -501,7 +501,7 @@ export const stockData = [
     foreignBuy: 45.2, foreignSell: 68.4,
   },
   {
-    symbol: 'HUT', tab: 'HNX',
+    symbol: 'HUT', tab: 'HNX', industry: 'construction',
     ceiling: 22.1, floor: 19.20, ref: 20.65,
     bid: [
       { price: 20.50, vol: 28.4 }, { price: 20.40, vol: 42.6 }, { price: 20.30, vol: 68.2 },
@@ -514,7 +514,7 @@ export const stockData = [
     foreignBuy: 8.4, foreignSell: 6.2,
   },
   {
-    symbol: 'IDC', tab: 'HNX',
+    symbol: 'IDC', tab: 'HNX', industry: 'construction',
     ceiling: 42.5, floor: 36.90, ref: 39.70,
     bid: [
       { price: 39.40, vol: 12.6 }, { price: 39.20, vol: 8.4 }, { price: 39.00, vol: 15.8 },
@@ -527,7 +527,7 @@ export const stockData = [
     foreignBuy: 14.2, foreignSell: 12.8,
   },
   {
-    symbol: 'MBG', tab: 'HNX',
+    symbol: 'MBG', tab: 'HNX', industry: 'wholesale',
     ceiling: 32.5, floor: 28.20, ref: 30.35,
     bid: [
       { price: 30.10, vol: 18.4 }, { price: 30.00, vol: 24.6 }, { price: 29.90, vol: 38.2 },
@@ -540,7 +540,7 @@ export const stockData = [
     foreignBuy: 12.4, foreignSell: 10.2,
   },
   {
-    symbol: 'NVB', tab: 'HNX',
+    symbol: 'NVB', tab: 'HNX', industry: 'finance',
     ceiling: 14.3, floor: 12.40, ref: 13.35,
     bid: [
       { price: 13.20, vol: 84.6 }, { price: 13.10, vol: 126.3 }, { price: 13.00, vol: 248.5 },
@@ -553,7 +553,7 @@ export const stockData = [
     foreignBuy: 28.4, foreignSell: 35.6,
   },
   {
-    symbol: 'PGS', tab: 'HNX',
+    symbol: 'PGS', tab: 'HNX', industry: 'utilities',
     ceiling: 38.4, floor: 33.40, ref: 35.90,
     bid: [
       { price: 35.60, vol: 8.4 }, { price: 35.50, vol: 12.6 }, { price: 35.40, vol: 18.2 },
@@ -566,7 +566,7 @@ export const stockData = [
     foreignBuy: 5.8, foreignSell: 4.2,
   },
   {
-    symbol: 'PVI', tab: 'HNX',
+    symbol: 'PVI', tab: 'HNX', industry: 'finance',
     ceiling: 52.0, floor: 45.10, ref: 48.55,
     bid: [
       { price: 48.20, vol: 4.8 }, { price: 48.00, vol: 2.6 }, { price: 47.80, vol: 6.4 },
@@ -579,7 +579,7 @@ export const stockData = [
     foreignBuy: 8.4, foreignSell: 6.2,
   },
   {
-    symbol: 'PVS', tab: 'HNX',
+    symbol: 'PVS', tab: 'HNX', industry: 'professional',
     ceiling: 28.9, floor: 25.10, ref: 27.00,
     bid: [
       { price: 26.80, vol: 15.2 }, { price: 26.70, vol: 8.4 }, { price: 26.60, vol: 22.1 },
@@ -592,7 +592,7 @@ export const stockData = [
     foreignBuy: 38.4, foreignSell: 45.2,
   },
   {
-    symbol: 'SCI', tab: 'HNX',
+    symbol: 'SCI', tab: 'HNX', industry: 'construction',
     ceiling: 26.0, floor: 22.60, ref: 24.30,
     bid: [
       { price: 24.10, vol: 14.6 }, { price: 24.00, vol: 22.4 }, { price: 23.90, vol: 35.8 },
@@ -605,7 +605,7 @@ export const stockData = [
     foreignBuy: 8.6, foreignSell: 6.4,
   },
   {
-    symbol: 'SHS', tab: 'HNX',
+    symbol: 'SHS', tab: 'HNX', industry: 'finance',
     ceiling: 18.2, floor: 15.80, ref: 17.00,
     bid: [
       { price: 16.90, vol: 42.3 }, { price: 16.80, vol: 28.7 }, { price: 16.70, vol: 61.5 },
@@ -618,7 +618,7 @@ export const stockData = [
     foreignBuy: 12.5, foreignSell: 9.8,
   },
   {
-    symbol: 'TNG', tab: 'HNX',
+    symbol: 'TNG', tab: 'HNX', industry: 'manufacturing',
     ceiling: 18.7, floor: 16.20, ref: 17.45,
     bid: [
       { price: 17.30, vol: 32.4 }, { price: 17.20, vol: 48.6 }, { price: 17.10, vol: 62.8 },
@@ -631,7 +631,7 @@ export const stockData = [
     foreignBuy: 6.4, foreignSell: 8.2,
   },
   {
-    symbol: 'VCS', tab: 'HNX',
+    symbol: 'VCS', tab: 'HNX', industry: 'manufacturing',
     ceiling: 72.8, floor: 63.20, ref: 68.00,
     bid: [
       { price: 67.50, vol: 3.2 }, { price: 67.20, vol: 1.8 }, { price: 67.00, vol: 5.6 },
@@ -645,7 +645,7 @@ export const stockData = [
   },
 
   {
-    symbol: 'BCC', tab: 'HNX',
+    symbol: 'BCC', tab: 'HNX', industry: 'manufacturing',
     ceiling: 16.80, floor: 14.60, ref: 15.70,
     bid: [
       { price: 15.60, vol: 42.6 }, { price: 15.50, vol: 68.4 }, { price: 15.40, vol: 98.2 },
@@ -658,7 +658,7 @@ export const stockData = [
     foreignBuy: 8.4, foreignSell: 6.2,
   },
   {
-    symbol: 'BSI', tab: 'HNX',
+    symbol: 'BSI', tab: 'HNX', industry: 'finance',
     ceiling: 28.90, floor: 25.10, ref: 27.00,
     bid: [
       { price: 26.80, vol: 12.4 }, { price: 26.70, vol: 18.6 }, { price: 26.60, vol: 28.4 },
@@ -671,7 +671,7 @@ export const stockData = [
     foreignBuy: 18.4, foreignSell: 14.6,
   },
   {
-    symbol: 'DHT', tab: 'HNX',
+    symbol: 'DHT', tab: 'HNX', industry: 'healthcare',
     ceiling: 56.40, floor: 49.00, ref: 52.70,
     bid: [
       { price: 52.40, vol: 2.8 }, { price: 52.20, vol: 4.6 }, { price: 52.00, vol: 6.8 },
@@ -684,7 +684,7 @@ export const stockData = [
     foreignBuy: 2.4, foreignSell: 1.8,
   },
   {
-    symbol: 'KLF', tab: 'HNX',
+    symbol: 'KLF', tab: 'HNX', industry: 'construction',
     ceiling: 4.30, floor: 3.70, ref: 4.00,
     bid: [
       { price: 3.95, vol: 248.6 }, { price: 3.90, vol: 386.4 }, { price: 3.85, vol: 524.8 },
@@ -697,7 +697,7 @@ export const stockData = [
     foreignBuy: 48.6, foreignSell: 62.4,
   },
   {
-    symbol: 'NTP', tab: 'HNX',
+    symbol: 'NTP', tab: 'HNX', industry: 'manufacturing',
     ceiling: 42.80, floor: 37.20, ref: 40.00,
     bid: [
       { price: 39.70, vol: 6.4 }, { price: 39.60, vol: 9.8 }, { price: 39.50, vol: 14.6 },
@@ -710,7 +710,7 @@ export const stockData = [
     foreignBuy: 8.6, foreignSell: 6.4,
   },
   {
-    symbol: 'PLC', tab: 'HNX',
+    symbol: 'PLC', tab: 'HNX', industry: 'manufacturing',
     ceiling: 32.20, floor: 27.95, ref: 30.05,
     bid: [
       { price: 29.80, vol: 8.4 }, { price: 29.70, vol: 12.6 }, { price: 29.60, vol: 18.4 },
@@ -723,7 +723,7 @@ export const stockData = [
     foreignBuy: 6.4, foreignSell: 4.8,
   },
   {
-    symbol: 'THD', tab: 'HNX',
+    symbol: 'THD', tab: 'HNX', industry: 'construction',
     ceiling: 188.80, floor: 164.10, ref: 176.45,
     bid: [
       { price: 175.80, vol: 0.8 }, { price: 175.60, vol: 1.2 }, { price: 175.40, vol: 1.8 },
@@ -736,7 +736,7 @@ export const stockData = [
     foreignBuy: 0.4, foreignSell: 0.2,
   },
   {
-    symbol: 'VNR', tab: 'HNX',
+    symbol: 'VNR', tab: 'HNX', industry: 'finance',
     ceiling: 22.50, floor: 19.55, ref: 21.05,
     bid: [
       { price: 20.90, vol: 18.4 }, { price: 20.80, vol: 28.6 }, { price: 20.70, vol: 42.4 },
@@ -751,7 +751,7 @@ export const stockData = [
 
   // ── UPCOM ───────────────────────────────────────────────────────────────────
   {
-    symbol: 'ACV', tab: 'UPCOM',
+    symbol: 'ACV', tab: 'UPCOM', industry: 'transport',
     ceiling: 102.4, floor: 88.90, ref: 95.65,
     bid: [
       { price: 95.00, vol: 2.4 }, { price: 94.80, vol: 1.6 }, { price: 94.60, vol: 3.2 },
@@ -764,7 +764,7 @@ export const stockData = [
     foreignBuy: 4.2, foreignSell: 3.8,
   },
   {
-    symbol: 'BSR', tab: 'UPCOM',
+    symbol: 'BSR', tab: 'UPCOM', industry: 'manufacturing',
     ceiling: 24.5, floor: 21.30, ref: 22.90,
     bid: [
       { price: 22.70, vol: 48.6 }, { price: 22.60, vol: 82.4 }, { price: 22.50, vol: 124.8 },
@@ -777,7 +777,7 @@ export const stockData = [
     foreignBuy: 42.6, foreignSell: 56.8,
   },
   {
-    symbol: 'FOX', tab: 'UPCOM',
+    symbol: 'FOX', tab: 'UPCOM', industry: 'tech',
     ceiling: 68.5, floor: 59.50, ref: 64.00,
     bid: [
       { price: 63.70, vol: 3.8 }, { price: 63.50, vol: 2.4 }, { price: 63.30, vol: 4.6 },
@@ -790,7 +790,7 @@ export const stockData = [
     foreignBuy: 4.2, foreignSell: 3.6,
   },
   {
-    symbol: 'GEX', tab: 'UPCOM',
+    symbol: 'GEX', tab: 'UPCOM', industry: 'manufacturing',
     ceiling: 20.8, floor: 18.10, ref: 19.45,
     bid: [
       { price: 19.30, vol: 38.6 }, { price: 19.20, vol: 56.4 }, { price: 19.10, vol: 84.2 },
@@ -803,7 +803,7 @@ export const stockData = [
     foreignBuy: 18.4, foreignSell: 22.6,
   },
   {
-    symbol: 'HVN', tab: 'UPCOM',
+    symbol: 'HVN', tab: 'UPCOM', industry: 'transport',
     ceiling: 26.4, floor: 22.90, ref: 24.65,
     bid: [
       { price: 24.40, vol: 18.6 }, { price: 24.20, vol: 28.4 }, { price: 24.00, vol: 42.6 },
@@ -816,7 +816,7 @@ export const stockData = [
     foreignBuy: 14.6, foreignSell: 18.4,
   },
   {
-    symbol: 'MCH', tab: 'UPCOM',
+    symbol: 'MCH', tab: 'UPCOM', industry: 'manufacturing',
     ceiling: 82.5, floor: 71.70, ref: 77.10,
     bid: [
       { price: 76.80, vol: 4.6 }, { price: 76.60, vol: 2.8 }, { price: 76.40, vol: 5.4 },
@@ -829,7 +829,7 @@ export const stockData = [
     foreignBuy: 8.6, foreignSell: 6.4,
   },
   {
-    symbol: 'OIL', tab: 'UPCOM',
+    symbol: 'OIL', tab: 'UPCOM', industry: 'wholesale',
     ceiling: 16.8, floor: 14.60, ref: 15.70,
     bid: [
       { price: 15.60, vol: 62.4 }, { price: 15.50, vol: 98.6 }, { price: 15.40, vol: 148.2 },
@@ -842,7 +842,7 @@ export const stockData = [
     foreignBuy: 28.4, foreignSell: 38.6,
   },
   {
-    symbol: 'SBS', tab: 'UPCOM',
+    symbol: 'SBS', tab: 'UPCOM', industry: 'finance',
     ceiling: 12.4, floor: 10.80, ref: 11.60,
     bid: [
       { price: 11.50, vol: 68.4 }, { price: 11.40, vol: 105.6 }, { price: 11.30, vol: 165.2 },
@@ -855,7 +855,7 @@ export const stockData = [
     foreignBuy: 18.4, foreignSell: 24.6,
   },
   {
-    symbol: 'VCF', tab: 'UPCOM',
+    symbol: 'VCF', tab: 'UPCOM', industry: 'manufacturing',
     ceiling: 225.0, floor: 195.40, ref: 210.20,
     bid: [
       { price: 209.00, vol: 0.4 }, { price: 208.00, vol: 0.2 }, { price: 207.00, vol: 0.6 },
@@ -868,7 +868,7 @@ export const stockData = [
     foreignBuy: 0.2, foreignSell: 0.4,
   },
   {
-    symbol: 'VEA', tab: 'UPCOM',
+    symbol: 'VEA', tab: 'UPCOM', industry: 'manufacturing',
     ceiling: 42.5, floor: 36.90, ref: 39.70,
     bid: [
       { price: 39.50, vol: 8.4 }, { price: 39.30, vol: 12.6 }, { price: 39.10, vol: 18.4 },
@@ -881,7 +881,7 @@ export const stockData = [
     foreignBuy: 18.4, foreignSell: 15.2,
   },
   {
-    symbol: 'VGI', tab: 'UPCOM',
+    symbol: 'VGI', tab: 'UPCOM', industry: 'tech',
     ceiling: 18.5, floor: 16.10, ref: 17.30,
     bid: [
       { price: 17.10, vol: 28.6 }, { price: 17.00, vol: 45.4 }, { price: 16.90, vol: 68.2 },
@@ -894,7 +894,7 @@ export const stockData = [
     foreignBuy: 12.4, foreignSell: 15.6,
   },
   {
-    symbol: 'VTP', tab: 'UPCOM',
+    symbol: 'VTP', tab: 'UPCOM', industry: 'transport',
     ceiling: 58.5, floor: 50.80, ref: 54.65,
     bid: [
       { price: 54.40, vol: 5.8 }, { price: 54.20, vol: 3.4 }, { price: 54.00, vol: 6.8 },
@@ -907,7 +907,7 @@ export const stockData = [
     foreignBuy: 8.4, foreignSell: 6.2,
   },
   {
-    symbol: 'AGG', tab: 'UPCOM',
+    symbol: 'AGG', tab: 'UPCOM', industry: 'construction',
     ceiling: 18.60, floor: 16.20, ref: 17.40,
     bid: [
       { price: 17.30, vol: 28.6 }, { price: 17.20, vol: 42.4 }, { price: 17.10, vol: 62.8 },
@@ -920,7 +920,7 @@ export const stockData = [
     foreignBuy: 12.4, foreignSell: 14.6,
   },
   {
-    symbol: 'BMP', tab: 'UPCOM',
+    symbol: 'BMP', tab: 'UPCOM', industry: 'manufacturing',
     ceiling: 82.40, floor: 71.60, ref: 77.00,
     bid: [
       { price: 76.70, vol: 2.4 }, { price: 76.50, vol: 3.8 }, { price: 76.30, vol: 5.6 },
@@ -933,7 +933,7 @@ export const stockData = [
     foreignBuy: 4.8, foreignSell: 3.6,
   },
   {
-    symbol: 'DAH', tab: 'UPCOM',
+    symbol: 'DAH', tab: 'UPCOM', industry: 'accommodation',
     ceiling: 24.00, floor: 20.85, ref: 22.45,
     bid: [
       { price: 22.30, vol: 18.4 }, { price: 22.20, vol: 28.6 }, { price: 22.10, vol: 42.4 },
@@ -946,7 +946,7 @@ export const stockData = [
     foreignBuy: 8.4, foreignSell: 6.6,
   },
   {
-    symbol: 'DPM', tab: 'UPCOM',
+    symbol: 'DPM', tab: 'UPCOM', industry: 'manufacturing',
     ceiling: 38.40, floor: 33.40, ref: 35.90,
     bid: [
       { price: 35.60, vol: 12.6 }, { price: 35.50, vol: 18.4 }, { price: 35.40, vol: 28.6 },
@@ -959,7 +959,7 @@ export const stockData = [
     foreignBuy: 14.6, foreignSell: 18.4,
   },
   {
-    symbol: 'DRC', tab: 'UPCOM',
+    symbol: 'DRC', tab: 'UPCOM', industry: 'manufacturing',
     ceiling: 28.20, floor: 24.50, ref: 26.35,
     bid: [
       { price: 26.20, vol: 8.4 }, { price: 26.10, vol: 12.6 }, { price: 26.00, vol: 18.4 },
@@ -972,7 +972,7 @@ export const stockData = [
     foreignBuy: 6.4, foreignSell: 8.2,
   },
   {
-    symbol: 'GDT', tab: 'UPCOM',
+    symbol: 'GDT', tab: 'UPCOM', industry: 'manufacturing',
     ceiling: 46.50, floor: 40.40, ref: 43.45,
     bid: [
       { price: 43.20, vol: 4.6 }, { price: 43.10, vol: 6.8 }, { price: 43.00, vol: 9.4 },
@@ -985,7 +985,7 @@ export const stockData = [
     foreignBuy: 4.2, foreignSell: 3.4,
   },
   {
-    symbol: 'HAX', tab: 'UPCOM',
+    symbol: 'HAX', tab: 'UPCOM', industry: 'retail',
     ceiling: 18.20, floor: 15.80, ref: 17.00,
     bid: [
       { price: 16.90, vol: 22.4 }, { price: 16.80, vol: 35.6 }, { price: 16.70, vol: 52.4 },
@@ -998,7 +998,7 @@ export const stockData = [
     foreignBuy: 8.4, foreignSell: 6.2,
   },
   {
-    symbol: 'LTG', tab: 'UPCOM',
+    symbol: 'LTG', tab: 'UPCOM', industry: 'agriculture',
     ceiling: 38.20, floor: 33.20, ref: 35.70,
     bid: [
       { price: 35.50, vol: 6.8 }, { price: 35.40, vol: 10.2 }, { price: 35.30, vol: 14.6 },
@@ -1011,7 +1011,7 @@ export const stockData = [
     foreignBuy: 5.6, foreignSell: 4.2,
   },
   {
-    symbol: 'PAN', tab: 'UPCOM',
+    symbol: 'PAN', tab: 'UPCOM', industry: 'agriculture',
     ceiling: 28.80, floor: 25.00, ref: 26.90,
     bid: [
       { price: 26.70, vol: 10.4 }, { price: 26.60, vol: 15.8 }, { price: 26.50, vol: 22.6 },
@@ -1024,7 +1024,7 @@ export const stockData = [
     foreignBuy: 12.6, foreignSell: 10.4,
   },
   {
-    symbol: 'PHR', tab: 'UPCOM',
+    symbol: 'PHR', tab: 'UPCOM', industry: 'agriculture',
     ceiling: 54.00, floor: 46.90, ref: 50.45,
     bid: [
       { price: 50.20, vol: 5.4 }, { price: 50.10, vol: 8.2 }, { price: 50.00, vol: 12.6 },
@@ -1037,7 +1037,7 @@ export const stockData = [
     foreignBuy: 8.4, foreignSell: 6.8,
   },
   {
-    symbol: 'QNS', tab: 'UPCOM',
+    symbol: 'QNS', tab: 'UPCOM', industry: 'manufacturing',
     ceiling: 62.40, floor: 54.20, ref: 58.30,
     bid: [
       { price: 58.00, vol: 4.2 }, { price: 57.90, vol: 6.4 }, { price: 57.80, vol: 9.2 },

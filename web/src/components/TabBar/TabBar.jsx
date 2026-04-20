@@ -9,7 +9,6 @@ function TabBar({ activeTab, onTabChange, collapseStep, onCollapse }) {
 
   const EXTRA_TABS = [
     { id: 'phai-sinh',   label: tb.derivatives },
-    { id: 'nhom-nganh',  label: tb.sector      },
     { id: 'chung-quyen', label: tb.cw          },
     { id: 'etf',         label: tb.etf         },
     { id: 'trai-phieu',  label: tb.bond        },
@@ -40,6 +39,25 @@ function TabBar({ activeTab, onTabChange, collapseStep, onCollapse }) {
         </div>
 
         <div className="tab-bar__extra-tabs">
+          <div className="tab-bar__industry">
+            <button
+              className={`tab-bar__tab-extra tab-bar__tab-extra--industry ${activeTab?.startsWith('industry:') ? 'tab-bar__tab-extra--active' : ''}`}
+            >
+              {tb.sector} <span className="tab-bar__caret">▾</span>
+            </button>
+            <div className="tab-bar__industry-dropdown">
+              {tb.industries.map((ind) => (
+                <button
+                  key={ind.key}
+                  className={`tab-bar__industry-item ${activeTab === `industry:${ind.key}` ? 'tab-bar__industry-item--active' : ''}`}
+                  onClick={() => onTabChange(`industry:${ind.key}`)}
+                >
+                  {ind.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {EXTRA_TABS.map((tab) => (
             <button
               key={tab.id}
